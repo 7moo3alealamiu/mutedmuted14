@@ -31,11 +31,3 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 });
 
 client.login(process.env.BOT_TOKEN);
-
-client.on('ready', async() => {
-var server = "509512042114187275"; // ايدي السررفر
-var channel = "511661241291374592";//ايدي الروم
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam ')
-    },305);
-})
