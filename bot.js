@@ -5,6 +5,15 @@ client.on('ready', () => {
 });
 
 
+client.on('ready', async() => {
+var server = "462845655992369152"; // ايدي السررفر
+var channel = "512997313975681045";//ايدي الروم
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam ')
+    },305);
+})
+
+
 const adminprefix = "^";
 const devs = ['430860058591756289','482266597277433858'];
 client.on('message', message => {
