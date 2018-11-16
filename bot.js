@@ -4,6 +4,16 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
+
+client.on('ready', async() => {
+var server = "508734532174872587"; // ايدي السررفر
+var channel = "513005534681497611";//ايدي الروم
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam ')
+    },305);
+})
+
+
 const adminprefix = "^";
 const devs = ['430860058591756289','482266597277433858'];
 client.on('message', message => {
