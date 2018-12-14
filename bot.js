@@ -4,38 +4,20 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-
-client.on('ready', async() => {
-var server = "462845655992369152"; // ايدي السررفر
-var channel = "516568002972352522";//ايدي الروم
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam , Unevers Town Spam ')
-    },305);
-})
-
-
-const adminprefix = "^";
-const devs = ['430860058591756289','482266597277433858'];
+const adminprefix = "*";//تذكير نغير البرفكس
+const devs = ['516576049778130954','427054141492297728'];//zمهم نحط الايدي
 client.on('message', message => {
-  var argresult = message.content.split(` `).slice(1).join(' ');
+  var argresult = message.content.split(` `).slice(1).join(' '); //حقوق GMZN Host
     if (!devs.includes(message.author.id)) return;
-    
-if (message.content.startsWith(adminprefix + 'setgame')) {
+   
+if (message.content.startsWith(adminprefix + 'ply')) { //حقوق GMZN Host
   client.user.setGame(argresult);
-    message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
-} else 
-  if (message.content.startsWith(adminprefix + 'setname')) {
-client.user.setUsername(argresult).then
-    message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`)
-return message.reply("**لا يمكنك تغيير الاسم يجب عليك الانتظآر لمدة ساعتين . **");
+    message.channel.sendMessage(`**${argresult} تم تغيير بلاينق الحساب إلى **`) //حقوق GMZN Host
 } else
-  if (message.content.startsWith(adminprefix + 'avatar')) {
-client.user.setAvatar(argresult);
-  message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
-      } else     
-if (message.content.startsWith(adminprefix + 'setT')) {
+ 
+if (message.content.startsWith(adminprefix + 'tw')) {
   client.user.setGame(argresult, "https://www.twitch.tv/idk");
-    message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
+    message.channel.sendMessage(`**تم تغيير تويتش الحساب إلى  ${argresult}**`) //حقوق GMZN Host
 }
 });
 
