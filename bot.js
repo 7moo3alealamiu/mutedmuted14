@@ -5,7 +5,7 @@ client.on('ready', () => {
 });
 
 const adminprefix = "*";//تذكير نغير البرفكس
-const devs = ['516576049778130954','427054141492297728'];//zمهم نحط الايدي
+const devs = ['516576049778130954','500608037711642624'];//zمهم نحط الايدي
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' '); //حقوق GMZN Host
     if (!devs.includes(message.author.id)) return;
